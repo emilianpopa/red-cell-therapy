@@ -1,3 +1,4 @@
+import FramerNavigation from './components/FramerNavigation'
 import HeroSection from './components/HeroSection'
 import WhyItWorksSection from './components/WhyItWorksSection'
 import ScienceSection from './components/ScienceSection'
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      <FramerNavigation />
       <HeroSection data={heroData} trustIcons={trustIcons} />
       <WhyItWorksSection sectionData={whyItWorksSection} cards={whyItWorksCards} />
       <ScienceSection data={scienceData} />
@@ -46,6 +48,7 @@ function App() {
       <ProductSection data={productData} />
       <TeamStorySection teamMembers={teamMembers} storyData={FALLBACK_TEAM_STORY} />
       <FinalCTASection data={finalCTAData} />
+      <div id="framer-footer-placeholder" data-source="framer" />
     </div>
   )
 }

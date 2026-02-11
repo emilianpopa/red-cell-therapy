@@ -46,3 +46,20 @@ p {
   font-size: var(--font-size-body);
   line-height: 1.6;
 }
+
+/* Framer navigation integration */
+#framer-nav-placeholder,
+#framer-footer-placeholder {
+  width: 100%;
+}
+
+#framer-nav-placeholder > * {
+  margin: 0;
+}
+
+/* Ensure sticky nav works */
+[data-source="framer"] nav[data-framer-sticky] {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
