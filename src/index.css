@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  /* Expand Health Color Palette */
+  --color-cream: #EFEEEA;
+  --color-dark: #484F5D;
+  --color-light: #E4DDD5;
+  --color-green: #25D366;
+  --color-dark-bg: #2C3340;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Font sizes matching Expand Health */
+  --font-size-h1: 36px;
+  --font-size-h2: 32px;
+  --font-size-body: 14px;
+  --font-size-small: 12px;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: 1.4;
+}
+
+p {
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
