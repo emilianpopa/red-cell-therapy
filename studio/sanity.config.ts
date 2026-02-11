@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Red Cell Therapy',
 
-  projectId: '26hsgcud',
+  projectId: '26hsgcuu',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
